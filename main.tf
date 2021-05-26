@@ -34,14 +34,3 @@ resource "aws_vpn_connection" "main" {
     Name              = "${each.key}vpn"
   }
 }
-
-
-#resource "aws_customer_gateway" "main" {
-#  bgp_asn    = 65000
-#  ip_address = "172.83.124.10"
-#  type       = "ipsec.1"
-
-#  tags = {
-#    Name = var.aws_cgws[count.index]
-#  }
-#}
